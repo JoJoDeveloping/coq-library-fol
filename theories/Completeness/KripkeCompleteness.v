@@ -239,7 +239,7 @@ Section KripkeCompleteness.
 
     Notation "A <<=C B" := (ctx_incl A B) (at level 20).
     Notation "A ⊢SC phi" := ((proj1_sig A) ⊢SE phi) (at level 20).
-    Notation "A ;; psi ⊢sC phi" := ((proj1_sig A) ;; psi ⊢sE phi) (at level 20).
+    Notation "A ;; psi ⊢sC phi" := ((proj1_sig A) ;; psi ⊢sE phi) (at level 70).
 
     Ltac dest_con_ctx :=
       match goal with

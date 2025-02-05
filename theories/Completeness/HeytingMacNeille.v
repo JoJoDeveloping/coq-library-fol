@@ -7,8 +7,11 @@ Require Export Coq.Program.Basics.
 From FOL Require Import FullSyntax.
 From FOL Require Import Heyting.Heyting.
 
-
-Structure HeytingMorphism (HA1 HA2 : HeytingAlgebra) (F : HA1 -> HA2) : Type :=
+(* Morally this is in [Type]. But since all fields are in [Prop], putting this into
+   [Prop] is fine due to subsingleton elimination, and because it is not computationally
+   relevant anyways. *)
+(* Changing it back to [Type] makes Coq warn that this could just as well be in [Prop]. *)
+Structure HeytingMorphism (HA1 HA2 : HeytingAlgebra) (F : HA1 -> HA2) : Prop :=
   {
     F_inj : forall u v, F u = F v -> u = v ;
     F_mono : forall u v, u <= v -> F u <= F v ;

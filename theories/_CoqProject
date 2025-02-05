@@ -5,6 +5,14 @@ COQDOCFLAGS = "--charset utf-8 -s --with-header ../website/resources/header.html
 
 -Q . FOL
 
+
+# Warning seems incorrect, see https://github.com/coq/coq/issues/19631
+# Disabled for now to reduce spam.
+-arg -w -arg -notation-incompatible-prefix
+# Disable warnings about vectors being hard to use. We know how to work with them.
+-arg -w -arg -warn-library-file-stdlib-vector
+
+
 FullSyntax.v
 FragmentSyntax.v
 Arithmetics.v

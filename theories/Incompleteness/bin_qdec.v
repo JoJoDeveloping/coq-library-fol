@@ -10,6 +10,8 @@ Open Scope string_scope.
 
 Require Import Setoid.
 
+(* TODO FIXME the conflicting notation is not actually enabled (it is only Reserved), it should be refactored in coq-library-undecidability. *)
+#[warnings="notation-incompatible-prefix"]
 Require Import Undecidability.Shared.Libs.DLW.Vec.vec.
 
 Require Import String.

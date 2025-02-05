@@ -12,8 +12,8 @@ Require Import Undecidability.Synthetic.EnumerabilityFacts.
 From Coq.Logic Require Import ConstructiveEpsilon.
 From FOL.Incompleteness Require Import utils epf fol_utils qdec sigma1.
 
-Import ListNotations.
-
+(* Coq's ListNotation clashes with notations from MuRec *)
+Local Notation "[ e ]" := (cons e nil) (at level 70).
 
 Derive Signature for Vector.t.
 
@@ -46,7 +46,7 @@ End recalg_enum.
 
 
 Lemma erase_ra_rel alg x y :
-  (exists k, evalfun k (erase alg) [x] = Some y) <-> 
+  (exists k, evalfun k (erase alg) ([x]) = Some y) <-> 
   ra_rel alg (Vector.cons _ x _ (Vector.nil _)) y.
 Proof.
   split.
@@ -63,7 +63,7 @@ Qed.
 Definition mu_step : recalg 1 -> nat -\ nat.
 Proof.
   intros c x. unshelve eexists.
-  { intros k. exact (evalfun k (erase c) [x]). }
+  { intros k. exact (evalfun k (erase c) ([x])). }
   unfold core_valid.
   intros y1 y2 k1 k2 H1 H2. unfold evalfun in *.
   eapply ra_rel_fun.

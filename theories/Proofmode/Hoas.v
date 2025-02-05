@@ -58,7 +58,7 @@ Notation "¬ A" := ((A → ⊥)%hoas) (at level 42) : hoas_scope.
 Notation "A '↔' B" := ((A → B)%hoas ∧ (B → A)%hoas) (at level 43) : hoas_scope.
 
 Definition convert `{funcs_signature, preds_signature, operators} f := (@conv _ _ _ 0 f).
-Arguments convert {_ _ _} f%hoas.
+Arguments convert {_ _ _} f%_hoas.
 
 Notation "<< f" := (ltac:(let y := eval cbn -[subst_form] in (convert f) in exact y)) (at level 200, only parsing).
 

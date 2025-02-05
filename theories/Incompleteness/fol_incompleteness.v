@@ -9,7 +9,6 @@ From FOL.Incompleteness Require Import Axiomatisations utils fol_utils qdec bin_
 From FOL.Proofmode Require Import Theories ProofMode.
 
 Require Import Lia String List.
-Import ListNotations.
 
 (* * Incompleteness of first-order logic *)
 
