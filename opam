@@ -32,7 +32,7 @@ depends: [
   "coq-library-undecidability" {= "dev"}
 ]
 pin-depends: [
-  ["coq-library-undecidability.dev" "git+https://github.com/mrhaandi/coq-library-undecidability.git#MuRec-eval"]
+  ["coq-library-undecidability.dev" "git+https://github.com/JoJoDeveloping/coq-library-undecidability.git#master"]
 ]
 synopsis: "A Coq Library for First-Order Logic"
 url {
