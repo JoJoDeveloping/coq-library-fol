@@ -18,34 +18,34 @@ The FOL library currently extends this core with the following content:
 
 ## Installation
 
-We are currently planning to release this library as an OPAM package. Until then, the library can be installed manually.
+### As a Library User
 
-First, we recommend that you create a new OPAM switch, although this is optional:
+This library is available in opam. To install it, you can use the following commands:
 
 ```
-opam switch create coq-library-fol-8-16 --packages=ocaml-variants.4.14.0+options,ocaml-option-flambda
-opam switch link coq-library-fol-8-16 .
+opam switch create coq-library-fol --packages=ocaml-variants.4.14.1+options,ocaml-option-flambda
 eval $(opam env)
-```
-
-Then, install the library using:
-
-```
 opam repo add coq-released https://coq.inria.fr/opam/released
 opam update
-opam install .
+opam install coq-library-fol
 ```
 
+### As a Library Developer
+
+First, clone this repostitory. Then, run the following commands:
+
+```
+opam switch create . --packages=ocaml-variants.4.14.1+options,ocaml-option-flambda --deps-only --repos=default,coq-released=https://coq.inria.fr/opam/released
+make
+```
+
+This should automatically build the library. If you are working on a "pre-release" version, you might need the following `--repos` flag:
+```
+--repos=default,coq-core-dev=https://coq.inria.fr/opam/core-dev,coq-extra-dev=https://coq.inria.fr/opam/extra-dev,coq-released=https://coq.inria.fr/opam/released
+```
 ## Contributing
 
-In order to compile the library for development, use the above manual installation instructions (preferrably creating a new switch), but replace the last command with
-```
-opam install . --deps-only
-```
-
-Compile the library using `make` or using `opam build`.
-
-To contribute, fork the project on GitHub, add a new subdirectory for your project and your files, then file a pull request.
+We are open to contributions! To contribute, fork the project on GitHub, add a new subdirectory for your project and your files, then file a pull request.
 
 
 ## Contributors
