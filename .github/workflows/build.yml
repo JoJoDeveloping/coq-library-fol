@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         coq_version: 
-          - '8.20'
+          - 'dev'
         ocaml_version:
           - '4.14-flambda'
       fail-fast: true
@@ -36,7 +36,7 @@ jobs:
             endGroup
           before_install: |
             startGroup "Print opam config"
-              sudo chown -R coq:coq .  
+              sudo chown -R rocq:rocq .  
               opam config list; opam repo list; opam list
             endGroup
           script: |
