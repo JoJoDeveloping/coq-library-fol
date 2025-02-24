@@ -4,8 +4,8 @@ From Undecidability.Synthetic Require Import DecidabilityFacts EnumerabilityFact
 From Undecidability.Synthetic Require Import ListEnumerabilityFacts MoreEnumerabilityFacts.
 From Undecidability.Shared Require Import Dec.
 From Equations Require Import Equations.
-Require Import ConstructiveEpsilon.
-Require Import List.
+From Stdlib Require Import ConstructiveEpsilon.
+From Stdlib Require Import List.
 Import ListNotations.
 
 Local Set Implicit Arguments.

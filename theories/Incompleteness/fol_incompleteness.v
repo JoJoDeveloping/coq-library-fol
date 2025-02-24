@@ -8,7 +8,7 @@ From FOL Require Import FullSyntax Arithmetics.
 From FOL.Incompleteness Require Import Axiomatisations utils fol_utils qdec bin_qdec sigma1 epf epf_mu formal_systems abstract_incompleteness ctq.
 From FOL.Proofmode Require Import Theories ProofMode.
 
-Require Import Lia String List.
+From Stdlib Require Import Lia String List.
 
 (* * Incompleteness of first-order logic *)
 

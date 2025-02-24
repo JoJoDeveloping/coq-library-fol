@@ -1,10 +1,10 @@
 From Equations Require Import Equations.
-From Coq Require Import Arith Lia List Program.Equality.
+From Stdlib Require Import Arith Lia List Program.Equality.
 From FOL Require Import FullSyntax.
 From FOL Require Import Semantics.Heyting.Heyting Completeness.HeytingMacNeille.
 From Undecidability Require Import Shared.ListAutomation Shared.Dec.
 Import ListNotations.
-From Coq Require Import Vector List.
+From Stdlib Require Import Vector List.
 Import ListAutomationNotations ListAutomationHints ListAutomationInstances ListAutomationFacts.
 
 

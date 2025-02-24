@@ -3,12 +3,12 @@ From Undecidability.Synthetic Require Import DecidabilityFacts EnumerabilityFact
 From Undecidability.H10 Require Import DPRM dio_single.
 
 From Equations Require Import Equations.
-Require Import String List Lia.
+From Stdlib Require Import String List Lia.
 From Undecidability.MuRec.Util Require Import recalg enumerable.
 Require Import Undecidability.MuRec.Util.eval.
 From Undecidability.H10 Require Import DPRM.
 Require Import Undecidability.Synthetic.EnumerabilityFacts.
-From Coq.Logic Require Import ConstructiveEpsilon.
+From Stdlib.Logic Require Import ConstructiveEpsilon.
 From FOL.Incompleteness Require Import utils epf fol_utils qdec sigma1.
 
 (* Coq's ListNotation clashes with notations from MuRec *)

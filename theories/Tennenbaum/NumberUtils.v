@@ -1,4 +1,4 @@
-Require Import Arith Lia Nat.
+From Stdlib Require Import Arith Lia Nat.
 From Undecidability.Synthetic Require Import DecidabilityFacts.
 From FOL.Tennenbaum Require Import SyntheticInType MoreDecidabilityFacts.
 Notation dec_eq_nat := Nat.eq_dec.

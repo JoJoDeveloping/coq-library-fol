@@ -1,5 +1,5 @@
 From Equations Require Import Equations.
-From Coq Require Import Arith Lia List Program.Equality.
+From Stdlib Require Import Arith Lia List Program.Equality.
 From FOL Require Import FullSyntax Heyting.Heyting.
 Import ListNotations.
 

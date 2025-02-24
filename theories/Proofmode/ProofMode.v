@@ -5,7 +5,7 @@ From Undecidability.Shared Require Import Dec ListAutomation.
 From FOL Require Import FullSyntax.
 From FOL.Proofmode Require Import Theories.
 
-Require Import List Lia String.
+From Stdlib Require Import List Lia String.
 Import ListNotations.
 Import ListAutomationNotations ListAutomationFacts ListAutomationHints ListAutomationInstances.
 

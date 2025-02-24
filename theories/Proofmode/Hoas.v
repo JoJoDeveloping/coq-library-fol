@@ -1,5 +1,5 @@
 From FOL Require Import FullSyntax.
-Require Import Vector.
+From Stdlib Require Import Vector.
 
 Local Notation vec := Vector.t.
 

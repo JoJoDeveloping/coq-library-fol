@@ -3,7 +3,7 @@
 Set Implicit Arguments.
 Unset Strict Implicit.
 Require Export Setoid Morphisms.
-Require Export Coq.Program.Basics.
+Require Export Stdlib.Program.Basics.
 From FOL Require Import FullSyntax.
 From FOL Require Import Heyting.Heyting.
 

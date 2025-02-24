@@ -6,8 +6,8 @@ From FOL.Incompleteness Require Import qdec sigma1 ctq.
 From FOL.Proofmode Require Import Theories ProofMode.
 
 
-Require Import Lia.
-Require Import String List.
+From Stdlib Require Import Lia.
+From Stdlib Require Import String List.
 Import Vector.VectorNotations.
 
 

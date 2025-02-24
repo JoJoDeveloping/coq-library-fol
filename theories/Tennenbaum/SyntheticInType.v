@@ -1,5 +1,5 @@
-Require Import Setoid.
-Require Import ConstructiveEpsilon.
+From Stdlib Require Import Setoid.
+From Stdlib Require Import ConstructiveEpsilon.
 From Undecidability.Synthetic Require Export DecidabilityFacts.
 From Undecidability.Shared Require Export Dec.
 

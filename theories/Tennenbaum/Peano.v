@@ -1,11 +1,11 @@
 From FOL Require Import FullSyntax Arithmetics Theories.
 From FOL.Tennenbaum Require Import NumberUtils SyntheticInType.
 From Undecidability.Shared Require Import ListAutomation.
-Require Import Vector List Lia.
+From Stdlib Require Import Vector List Lia.
 Import Vector.VectorNotations.
 Import ListNotations ListAutomationNotations ListAutomationInstances ListAutomationHints.
 
-Require Import Setoid Morphisms.
+From Stdlib Require Import Setoid Morphisms.
 
 Definition sless x y := (∃ y`[↑] == σ (x`[↑] ⊕ $0)).
 Notation "x '⧀' y" := (sless x y) (at level 40) : PA_Notation.

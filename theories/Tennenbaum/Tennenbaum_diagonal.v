@@ -3,7 +3,7 @@ From Undecidability.Shared Require Import ListAutomation.
 From FOL.Tennenbaum Require Import MoreDecidabilityFacts Church Coding NumberUtils Formulas SyntheticInType Peano CantorPairing.
 
 (* Require Import FOL Peano Tarski Deduction CantorPairing NumberTheory Synthetic DecidabilityFacts Formulas Coding Church. *)
-Require Import Lia.
+From Stdlib Require Import Lia.
 
 Import Vector.VectorNotations.
 

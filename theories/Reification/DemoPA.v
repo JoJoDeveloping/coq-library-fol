@@ -1,7 +1,7 @@
 Require Import FOL.Reification.GeneralReflection FOL.Arithmetics FOL.FullSyntax.
 Import MetaCoq.Template.Ast MetaCoq.Template.TemplateMonad.Core.
 Import Vector.VectorNotations.
-Require Import String List.
+From Stdlib Require Import String List.
 
 Section ReificationExample.
   (* We assume an arbitrary model of PA which fulfills the axioms of PA *)

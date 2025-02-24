@@ -2,8 +2,8 @@ From FOL Require Import FullSyntax Arithmetics.
 From FOL.Incompleteness Require Import qdec sigma1.
 From FOL.Proofmode Require Import Theories ProofMode.
 
-Require Import Lia.
-Require Import String List.
+From Stdlib Require Import Lia.
+From Stdlib Require Import String List.
 Import ListNotations.
 
 Open Scope string_scope.

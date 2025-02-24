@@ -5,8 +5,8 @@ From FOL.Tennenbaum Require Import MoreDecidabilityFacts DN_Utils Church Coding 
 From FOL.Incompleteness Require Import qdec sigma1 ctq.
 
 From FOL.Proofmode Require Import Theories ProofMode.
-Require Import String.
-Require Import Lia.
+From Stdlib Require Import String.
+From Stdlib Require Import Lia.
 Import Vector.VectorNotations.
 
 Notation "x 'el' A" := (List.In x A) (at level 70).

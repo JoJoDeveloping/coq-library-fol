@@ -1,8 +1,8 @@
 From FOL Require Import FullSyntax.
 From MetaCoq.Template Require Import All Pretty Checker.
 From MetaCoq.Utils Require Export bytestring.
-Require Import List String Arith Lia.
-From Coq Require Import Classes.DecidableClass.
+From Stdlib Require Import List String Arith Lia.
+From Stdlib Require Import Classes.DecidableClass.
 
 
 

@@ -4,7 +4,7 @@ From Undecidability.Shared Require Import Dec.
 From FOL Require Import FullSyntax.
 From FOL.Proofmode Require Import Theories ProofMode.
 From FOL Require Import Sets.
-Require Import String List.
+From Stdlib Require Import String List.
 
 Import ListNotations.
 Open Scope string_scope.

@@ -1,10 +1,10 @@
 (* ** Arithmetical Hierarchy in Type Theory *)
 
-Require Import Lia Vector Fin List Arith.Cantor.
+From Stdlib Require Import Lia Vector Fin List Arith.Cantor.
 Import Vector.VectorNotations.
 From Undecidability.Synthetic Require Import Definitions.
 
-Require Import PeanoNat (* Nat.eqb *) Bool.
+From Stdlib Require Import PeanoNat (* Nat.eqb *) Bool.
 
 From Equations Require Import Equations.
 Require Import Equations.Prop.DepElim.

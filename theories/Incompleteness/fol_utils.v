@@ -5,11 +5,11 @@ From Undecidability.Synthetic Require Import Definitions EnumerabilityFacts.
 From FOL Require Import FullSyntax Arithmetics.
 
 From FOL.Proofmode Require Import Theories ProofMode.
-Require Import String List.
+From Stdlib Require Import String List.
 Open Scope string_scope.
 
 From Equations Require Import Equations.
-Require Import Lia List.
+From Stdlib Require Import Lia List.
 
 
 (* * First-order logic *)

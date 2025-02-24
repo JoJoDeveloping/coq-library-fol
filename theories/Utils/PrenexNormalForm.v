@@ -1,6 +1,6 @@
 (* * Prenex Normal Form *)
 From FOL Require Import FullSyntax Arithmetics.
-Require Import Lia Vector List.
+From Stdlib Require Import Lia Vector List.
 Import Vector.VectorNotations.
 Import List.ListNotations.
 

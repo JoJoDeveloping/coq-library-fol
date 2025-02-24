@@ -6,11 +6,11 @@ From FOL.Proofmode Require Import Theories ProofMode.
 From FOL.Incompleteness Require Import fol_utils qdec sigma1.
 
 
-Require Import String List.
+From Stdlib Require Import String List.
 Open Scope string_scope.
 
 From Equations Require Import Equations.
-Require Import Lia.
+From Stdlib Require Import Lia.
 
 
 Section value_disjoint.

@@ -6,7 +6,7 @@ From FOL.Proofmode Require Import Theories ProofMode.
 
 From FOL.Incompleteness Require Import Axiomatisations utils fol_utils qdec bin_qdec sigma1 epf epf_mu.
 
-Require Import Lia String List Cantor.
+From Stdlib Require Import Lia String List Cantor.
 
 (** ** Church's Thesis for Q *)
 Section ctq.

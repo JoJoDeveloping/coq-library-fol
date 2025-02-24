@@ -3,7 +3,7 @@
 From FOL Require Import FragmentSyntax Theories Deduction.FragmentSequentFacts.
 From Undecidability.Synthetic Require Import Definitions DecidabilityFacts EnumerabilityFacts ListEnumerabilityFacts ReducibilityFacts.
 From Undecidability Require Import Shared.ListAutomation Shared.Dec.
-From Coq Require Import Vector List Lia.
+From Stdlib Require Import Vector List Lia.
 Import ListAutomationNotations ListAutomationHints ListAutomationInstances ListAutomationFacts.
 From FOL.Completeness Require Export TarskiCompleteness.
 From FOL.Utils Require Import MPFacts.

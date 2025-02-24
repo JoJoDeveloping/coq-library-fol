@@ -2,7 +2,7 @@ From Equations Require Import Equations.
 From Undecidability.Shared Require Import Dec ListAutomation.
 From FOL Require Import FullSyntax.
 
-Require Import List Arith.PeanoNat Eqdep_dec.
+From Stdlib Require Import List Arith.PeanoNat Eqdep_dec.
 
 Import ListAutomationNotations ListAutomationFacts ListAutomationHints ListAutomationInstances.
 

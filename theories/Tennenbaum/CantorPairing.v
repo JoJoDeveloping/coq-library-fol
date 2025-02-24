@@ -1,4 +1,4 @@
-Require Import Arith Lia.
+From Stdlib Require Import Arith Lia.
 
 
 Definition inj {X Y} (f : X -> Y) :=

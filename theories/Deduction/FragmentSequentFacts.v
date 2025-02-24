@@ -5,7 +5,7 @@ From Undecidability.Synthetic Require Import Definitions DecidabilityFacts Enume
 Import ListAutomationNotations ListAutomationFacts ListAutomationHints ListAutomationInstances.
 From FOL Require Import FragmentSyntax Theories.
 From FOL.Deduction Require Export FragmentSequent.
-From Coq Require Import Lia.
+From Stdlib Require Import Lia.
 
 Section Gentzen.
 

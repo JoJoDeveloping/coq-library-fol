@@ -4,7 +4,7 @@ From FOL.Tennenbaum Require Import NumberUtils DN_Utils Formulas SyntheticInType
 From FOL.Incompleteness Require Import qdec sigma1 ctq.
 
 (* Require Import FOL Tarski Deduction Peano Formulas NumberTheory Synthetic DecidabilityFacts. *)
-Require Import Lia.
+From Stdlib Require Import Lia.
 From Equations Require Import Equations.
 
 Import Vector.VectorNotations.

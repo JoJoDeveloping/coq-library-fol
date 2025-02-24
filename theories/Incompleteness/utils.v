@@ -1,10 +1,10 @@
 From Undecidability.Synthetic Require Import Definitions.
 From Undecidability.Shared Require Import Dec.
 
-Require Import Vector.
+From Stdlib Require Import Vector.
 Import VectorNotations.
 
-Require Import ConstructiveEpsilon.
+From Stdlib Require Import ConstructiveEpsilon.
 
 From Equations Require Import Equations.
 

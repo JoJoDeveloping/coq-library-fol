@@ -4,7 +4,7 @@ From Undecidability.Shared Require Import ListAutomation.
 From FOL.Tennenbaum Require Import NumberUtils DN_Utils Formulas SyntheticInType Peano CantorPairing.
 From FOL.Incompleteness Require Import qdec sigma1 ctq.
 
-Require Import Lia.
+From Stdlib Require Import Lia.
 Import Vector.VectorNotations.
 
 

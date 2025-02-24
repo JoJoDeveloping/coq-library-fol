@@ -5,8 +5,8 @@ From FOL Require Import FullSyntax Arithmetics.
 From FOL.Incompleteness Require Import fol_utils qdec.
 From FOL.Proofmode Require Import Theories ProofMode.
 
-Require Import Lia.
-Require Import String.
+From Stdlib Require Import Lia.
+From Stdlib Require Import String.
 
 
 Open Scope string_scope.

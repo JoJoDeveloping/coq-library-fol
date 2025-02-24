@@ -4,7 +4,7 @@ Require Import Undecidability.Synthetic.Definitions Undecidability.Synthetic.Und
 From Undecidability.Synthetic Require Import Definitions EnumerabilityFacts.
 From Undecidability.FOL.Reductions Require Import H10p_to_FA.
 From Undecidability.H10 Require Import H10p H10p_undec.
-Require Import List Lia.
+From Stdlib Require Import List Lia.
 Section Arithmetic.
 
   Existing Instance PA_preds_signature.

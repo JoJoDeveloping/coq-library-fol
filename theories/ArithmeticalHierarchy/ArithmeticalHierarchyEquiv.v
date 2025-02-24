@@ -1,12 +1,12 @@
 (* ** Equivalence of Both Definitions *)
 
 From FOL Require Import FullSyntax.
-Require Import Lia Vector Fin List.
+From Stdlib Require Import Lia Vector Fin List.
 Import Vector.VectorNotations.
 From FOL.Utils Require Import PrenexNormalForm.
 From FOL.ArithmeticalHierarchy Require Import ArithmeticalHierarchySyntactic ArithmeticalHierarchySemantic.
 
-Require Import PeanoNat (* Nat.eqb *) Bool.
+From Stdlib Require Import PeanoNat (* Nat.eqb *) Bool.
 
 From Equations Require Import Equations.
 Require Import Equations.Prop.DepElim.

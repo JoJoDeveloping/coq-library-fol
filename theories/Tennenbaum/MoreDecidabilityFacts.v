@@ -1,5 +1,5 @@
-Require Import Arith Lia Nat.
-Require Import ConstructiveEpsilon.
+From Stdlib Require Import Arith Lia Nat.
+From Stdlib Require Import ConstructiveEpsilon.
 From Undecidability.Synthetic Require Import DecidabilityFacts.
 From FOL.Tennenbaum Require Import SyntheticInType CantorPairing.
 

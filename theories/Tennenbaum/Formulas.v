@@ -2,11 +2,11 @@ From FOL Require Import FullSyntax Arithmetics Theories.
 From FOL.Tennenbaum Require Import SyntheticInType NumberUtils Peano.
 From Undecidability.Shared Require Import ListAutomation.
 From FOL.Incompleteness Require Import qdec.
-Require Import List Lia.
+From Stdlib Require Import List Lia.
 Import Vector.VectorNotations.
 Import ListNotations ListAutomationNotations.
 
-Require Import Setoid Morphisms.
+From Stdlib Require Import Setoid Morphisms.
 
 Notation Q := Qeq.
 Notation "x ∣ y" := (exists k, x * k = y) (at level 50).
