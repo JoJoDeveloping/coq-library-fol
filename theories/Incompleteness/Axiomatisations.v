@@ -30,7 +30,6 @@ Existing Instance falsity_on.
 Local Hint Constructors prv : core.
 
 Notation "S <<= S'" := (forall phi, S phi -> S' phi) (at level 10).
-Notation "I ⊨= phi" := (forall rho, sat I rho phi) (at level 20).
 Notation "I ⊨=T T" := (forall psi, T psi -> I ⊨= psi) (at level 20).
 Notation "T ⊨T phi" := (forall D (I : interp D) rho, (forall psi, T psi -> rho ⊨ psi) -> rho ⊨ phi) (at level 55).
 

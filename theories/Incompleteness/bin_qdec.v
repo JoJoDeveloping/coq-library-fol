@@ -16,6 +16,7 @@ Require Import Undecidability.Shared.Libs.DLW.Vec.vec.
 
 From Stdlib Require Import String.
 Open Scope string_scope.
+Import PaOrderNotation.
 
 Section bin_qdec.
   Existing Instance PA_preds_signature.

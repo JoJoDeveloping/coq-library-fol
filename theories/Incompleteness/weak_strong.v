@@ -8,7 +8,7 @@ From FOL.Incompleteness Require Import fol_utils qdec sigma1.
 
 From Stdlib Require Import String List.
 Open Scope string_scope.
-
+Import PaOrderNotation.
 From Equations Require Import Equations.
 From Stdlib Require Import Lia.
 

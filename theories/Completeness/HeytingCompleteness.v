@@ -140,7 +140,8 @@ Section Completeness.
 
   Variable gprv : list form -> form -> Prop.
 
-  Notation "A ⊢ phi" := (gprv A phi) (at level 55).
+  #[warnings="-notation-overridden"]
+  Local Notation "A ⊢ phi" := (gprv A phi) (at level 55).
 
   Hypothesis gCtx : forall A phi, In phi A -> A ⊢ phi.
   Hypothesis gIE : forall A phi psi, A ⊢ (phi → psi) -> A ⊢ phi -> A ⊢ psi.

@@ -1,7 +1,5 @@
 -docroot .
 
--arg -w -arg -notation-overridden
-# -arg -w -arg -deprecated-missing-stdlib
 COQDOCFLAGS = "--charset utf-8 -s --with-header ../website/resources/header.html --with-footer ../website/resources/footer.html --index indexpage --external https://uds-psl.github.io/coq-library-fol/undec Undecidability"
 
 -Q . FOL

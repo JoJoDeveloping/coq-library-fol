@@ -79,6 +79,7 @@ Section Rosser.
   Context {peirce: peirce}.
   Context (α β: form)
           (HA2: bounded 2 α)(HB2: bounded 2 β).
+  Notation "x '⧀=' y"  := (PAle x y) (at level 40) : PA_Notation.
 
   (** Definition of the Rosser sentence.  *)
   Definition rosser ϕ ψ := ∃ ϕ ∧ ¬ ∃ $0 ⧀= $1 ∧ ψ[$0 .: $2 ..].

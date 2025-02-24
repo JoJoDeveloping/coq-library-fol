@@ -32,6 +32,7 @@ Section Model.
   Notation "x 'i⊗' y" := (@i_func PA_funcs_signature PA_preds_signature D I Mult ([x ; y])) (at level 38).
   Notation "'i0'" := (i_func (Σ_funcs:=PA_funcs_signature) (f:=Zero) []) (at level 2) : PA_Notation.
   Notation "x 'i⧀' y" := (exists d : D, y = iσ (x i⊕ d) ) (at level 40).
+  Notation "x '⧀=' y"  := (PAle x y) (at level 40) : PA_Notation.
 
   (* We also assume the existence of a formula which represents the prime number function *)
   Variable ψ : form.

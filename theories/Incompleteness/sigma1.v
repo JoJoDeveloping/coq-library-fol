@@ -10,6 +10,8 @@ From Stdlib Require Import String.
 
 
 Open Scope string_scope.
+
+Import PaOrderNotation.
 (* ** Sigma1 completeness *)
 
 Section Sigma1.

@@ -7,7 +7,7 @@ From FOL.Proofmode Require Import Theories ProofMode.
 From FOL.Incompleteness Require Import Axiomatisations utils fol_utils qdec bin_qdec sigma1 epf epf_mu.
 
 From Stdlib Require Import Lia String List Cantor.
-
+Import PaOrderNotation.
 (** ** Church's Thesis for Q *)
 Section ctq.
   Context {pei : peirce}.

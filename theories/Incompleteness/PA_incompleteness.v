@@ -120,8 +120,9 @@ Section Arithmetic.
     2 : exists embed; apply H10p_to_class_Q.
     apply H10p_undec.
   Qed.
-  
-  
+
+  Local Notation "I ⊫= Gamma" := (forall rho psi, In psi Gamma -> sat I rho psi) (at level 20).
+
   Definition Fr_pres T :=
     forall D (I : interp D) P, 
       I ⊨=T T -> 
