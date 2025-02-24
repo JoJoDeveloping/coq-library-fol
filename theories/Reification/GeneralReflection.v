@@ -66,14 +66,14 @@ Section MetaCoqUtils.
   (tApp
    (tConstruct
       {|
-      inductive_mind := (MPfile (["VectorDef"; "Vectors"; "Coq"]), "t");
+      inductive_mind := (MPfile (["VectorDef"; "Vectors"; "Stdlib"]), "t");
       inductive_ind := 0 |} 1 nil)
    ([T; x; n; xr])).
   Notation vectorNil T :=
   (tApp
    (tConstruct
       {|
-      inductive_mind := (MPfile (["VectorDef"; "Vectors"; "Coq"]), "t");
+      inductive_mind := (MPfile (["VectorDef"; "Vectors"; "Stdlib"]), "t");
       inductive_ind := 0 |} 0 nil) ([T])).
   (* Unquotes a vector (into a list) *)
   Fixpoint recoverVector (f : Ast.term) {struct f}: FailureMonad (list Ast.term) := let ffail := fail "not a vector application" in match f with
@@ -149,7 +149,7 @@ Section MetaCoqUtils.
 
 
   (* Notation for matching constructs like Coq.Init.Logic.and prop1 prop2 -> (x:="and", l:=[term1, term2]) *)
-  Notation baseLogicConn x l:= (tInd {| inductive_mind := (MPfile (["Logic"; "Init"; "Coq"]), x); inductive_ind := 0 |} l).
+  Notation baseLogicConn x l:= (tInd {| inductive_mind := (MPfile (["Logic"; "Init"; "Corelib"]), x); inductive_ind := 0 |} l).
   Definition matchBaseLogicConn {A:Type} (x: Ast.term) (f: ident -> A) : option A := match x with baseLogicConn s nil => Some (f s) | _ => None end.
 
 End MetaCoqUtils.
@@ -664,7 +664,7 @@ Section MainReificationFunctions.
       end 
     end.
 
-    Notation baseLogicConn x l:= (tInd {| inductive_mind := (MPfile (["Logic"; "Init"; "Coq"]), x); inductive_ind := 0 |} l).
+    Notation baseLogicConn x l:= (tInd {| inductive_mind := (MPfile (["Logic"; "Init"; "Corelib"]), x); inductive_ind := 0 |} l).
    (* *** Forms *)
     (* Like the above, but here we do it for forms. Arguments:
        - tct -- like above

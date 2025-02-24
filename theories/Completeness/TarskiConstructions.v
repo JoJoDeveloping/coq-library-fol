@@ -5,7 +5,7 @@
 From FOL Require Import FragmentSyntax Theories.
 From Undecidability.Synthetic Require Import Definitions DecidabilityFacts EnumerabilityFacts ListEnumerabilityFacts ReducibilityFacts.
 From Undecidability Require Import Shared.ListAutomation Shared.Dec.
-From Coq Require Import Vector List.
+From Coq Require Import Vector List Lia.
 Import ListAutomationNotations ListAutomationHints ListAutomationInstances ListAutomationFacts.
 
 Section GenCons.

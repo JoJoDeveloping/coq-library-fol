@@ -3,10 +3,9 @@ From Undecidability.Synthetic Require Import DecidabilityFacts EnumerabilityFact
 From Undecidability.H10 Require Import DPRM dio_single.
 
 From Equations Require Import Equations.
-Require Import String List.
+Require Import String List Lia.
 From Undecidability.MuRec.Util Require Import recalg enumerable.
-Require Import Undecidability.L.Reductions.MuRec.MuRec_extract.
-Require Import Undecidability.L.Reductions.HaltMuRec_to_HaltL.
+Require Import Undecidability.MuRec.Util.eval.
 From Undecidability.H10 Require Import DPRM.
 Require Import Undecidability.Synthetic.EnumerabilityFacts.
 From Coq.Logic Require Import ConstructiveEpsilon.
