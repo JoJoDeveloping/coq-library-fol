@@ -29,10 +29,13 @@ depends: [
   "rocq-stdlib" {= "dev"}
   "coq-metacoq-template" {= "dev"}
   "rocq-equations" {= "dev"}
-#   "coq-library-undecidability" {= "1.1.2+9.0"}
+  "coq-library-undecidability" {= "dev"}
+]
+pin-depends: [
+  ["coq-library-undecidability.dev" "git+https://github.com/mrhaandi/coq-library-undecidability.git#MuRec-eval"]
 ]
 synopsis: "A Coq Library for First-Order Logic"
 url {
-  git: "https://github.com/uds-psl/coq-library-fol.git#v1.0+8.20"
+  git: "https://github.com/uds-psl/coq-library-fol.git#v1.0+9.0"
 }
 
